@@ -64,6 +64,22 @@ cd langchain-pdf-qa-generator
 
 ### 2. Create an environment
 
+Using Python's built-in virtual environment:
+
+```bash
+python3.10 -m venv .venv
+source .venv/bin/activate
+```
+
+On Windows PowerShell:
+
+```powershell
+py -3.10 -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+Alternatively, using Conda:
+
 ```bash
 conda create -n interview python=3.10 -y
 conda activate interview
@@ -74,6 +90,8 @@ conda activate interview
 ```bash
 pip install -r requirements.txt
 ```
+
+The repository does not require the generated `*.egg-info` directory to run. The command above installs the runtime dependencies needed by the application.
 
 ### 4. Add your API keys
 
