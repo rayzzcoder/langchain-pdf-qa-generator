@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Q&amp;A Generator: turn any PDF into practice questions</title>
+  <meta name="description" content="Upload a PDF and get exam-ready practice questions with answers taken from the text.">
+  <style>
+    :root {
+      --navy: #0f2a43;
+      --navy-2: #17476b;
+      --ink: #14213d;
+      --muted: #55637a;
+      --bg: #f3f5f9;
+      --card: #ffffff;
+      --line: #d6dce6;
+      --accent: #f2b134;
+      --teal: #1b7f86;
+      --error: #b3261e;
+      --serif: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      --sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.55; }
+    a { color: var(--teal); }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+    .hero { background: linear-gradient(135deg, var(--navy), var(--navy-2)); color: #fff; padding: 56px 20px 112px; }
+    .wrap { max-width: 860px; margin: 0 auto; }
+    .tag { display: inline-block; padding: 4px 12px; border-radius: 999px; background: rgba(255,255,255,.12); font-size: .85rem; margin-bottom: 16px; }
+    h1 { font-family: var(--serif); font-size: clamp(1.9rem, 5vw, 2.9rem); line-height: 1.15; margin: 0 0 14px; max-width: 18em; }
+    .hero p { margin: 0; max-width: 40em; font-size: 1.1rem; color: #d7e3ef; }
+
+    main.wrap { padding: 0 20px 56px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+    .upload { margin-top: -72px; box-shadow: 0 12px 32px rgba(15,42,67,.14); }
+
+    .drop { display: block; padding: 32px 16px; border: 2px dashed #aeb9c9; border-radius: 10px; text-align: center; cursor: pointer; background: #f9fafc; overflow-wrap: anywhere; }
+    .drop:hover, .drop.over, .drop:focus-within { border-color: var(--teal); background: #eef7f7; }
+    .drop strong { display: block; font-size: 1.1rem; }
+    .drop small { color: var(--muted); }
+    input[type="file"] { position: absolute; opacity: 0; width: 1px; height: 1px; }
+
+    .rules { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+    .rules li { padding: 4px 12px; border-radius: 999px; background: #eef1f6; font-size: .88rem; color: var(--muted); }
+
+    button.go { width: 100%; margin-top: 18px; padding: 14px; border: 0; border-radius: 10px; background: var(--accent); color: var(--ink); font: inherit; font-weight: 700; font-size: 1.05rem; cursor: pointer; }
+    button.go:hover:not(:disabled) { filter: brightness(.95); }
+    button.go:disabled { opacity: .5; cursor: not-allowed; }
+
+    .remove { margin-top: 10px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--error); font: inherit; font-size: .9rem; cursor: pointer; }
+    .remove:hover:not(:disabled) { background: #fdf0ef; }
+    .remove:disabled { opacity: .5; cursor: not-allowed; }
+    .remove[hidden] { display: none; }
+
+    #status { margin-top: 14px; min-height: 1.5em; color: var(--muted); }
+    #status.error { color: var(--error); font-weight: 600; }
+
+    .steps { display: none; margin: 18px 0 0; padding: 0; list-style: none; gap: 8px; }
+    .steps.on { display: grid; }
+    .steps li { padding: 10px 14px; border-radius: 8px; background: #eef1f6; color: var(--muted); }
+    .steps li.active { background: #fff6dd; color: var(--ink); font-weight: 600; }
+    .steps li.done { background: #e4f4ee; color: #17603f; }
+    .steps li.done::before { content: "\2713  "; }
+
+    #results { display: none; margin-top: 24px; }
+    .res-head { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .res-head h2 { margin: 0; font-family: var(--serif); font-size: 1.4rem; }
+    a.dl { padding: 10px 18px; border-radius: 8px; background: var(--navy); color: #fff; text-decoration: none; font-weight: 600; }
+    details { border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin-bottom: 8px; background: #fff; }
+    summary { cursor: pointer; font-weight: 600; }
+    details p { margin: 10px 0 0; color: #2c3a52; }
+
+    section { margin-top: 40px; }
+    section h2 { font-family: var(--serif); font-size: 1.6rem; margin: 0 0 16px; }
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .grid .card { padding: 20px; }
+    .num { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 700; margin-bottom: 10px; }
+    .grid h3 { margin: 0 0 6px; font-size: 1.05rem; }
+    .grid p { margin: 0; color: var(--muted); }
+    .note { margin: 0; padding-left: 20px; color: var(--muted); }
+    .note li { margin-bottom: 6px; }
+    footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: .9rem; }
+
+    @media (prefers-reduced-motion: no-preference) { .drop { transition: background .15s, border-color .15s; } }
+    @media (max-width: 520px) { .card { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <span class="tag">For exam and interview prep</span>
+      <h1>Turn any PDF into practice questions you can study from</h1>
+      <p>Upload a report, paper, or chapter. You get 10 practice questions with answers taken straight from your document, ready to download and revise.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="card upload">
+      <label class="drop" id="drop">
+        <input type="file" id="pdf" accept="application/pdf">
+        <strong id="file-name">Choose a PDF or drop it here</strong>
+        <small id="file-meta">Click to browse your files</small>
+      </label>
+      <button type="button" class="remove" id="remove" hidden>Remove file</button>
+      <ul class="rules" aria-label="Upload limits">
+        <li>PDF only</li>
+        <li>Up to 5 pages</li>
+        <li>Max 5 MB</li>
+        <li>Text-based PDFs (not scanned images)</li>
+      </ul>
+
+      <button class="go" id="go" disabled>Generate questions and answers</button>
+      <div id="status" role="status" aria-live="polite"></div>
+
+      <ol class="steps" id="steps">
+        <li id="s1">Uploading your PDF</li>
+        <li id="s2">Writing questions and answers <span id="timer"></span></li>
+        <li id="s3">Ready to study</li>
+      </ol>
+
+      <div id="results">
+        <div class="res-head">
+          <h2>Your practice questions</h2>
+          <a class="dl" id="dl" href="#" download>Download CSV</a>
+        </div>
+        <div id="qa"></div>
+      </div>
+    </div>
+
+    <section>
+      <h2>How it works</h2>
+      <div class="grid">
+        <div class="card"><span class="num">1</span><h3>Upload</h3><p>Pick a PDF of your study material. Your file stays on the server running this app.</p></div>
+        <div class="card"><span class="num">2</span><h3>Generate</h3><p>The app reads your document, writes 10 questions about its key ideas, then finds the answers inside the text.</p></div>
+        <div class="card"><span class="num">3</span><h3>Study</h3><p>Read the questions here, or download a CSV that opens in Excel and Google Sheets.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Good to know</h2>
+      <ul class="note">
+        <li>Generating takes a few minutes. Keep this tab open until it finishes.</li>
+        <li>Answers come only from your document. AI can still make mistakes, so check important points against the source.</li>
+        <li>Each new upload replaces the previous results, so download the CSV if you want to keep it.</li>
+      </ul>
+    </section>
+
+    <footer>Built with FastAPI, LangChain, Groq and Gemini embeddings (FAISS search)</footer>
+  </main>
+
+  <script>
+    const MAX_MB = 5;
+    const input = document.getElementById("pdf");
+    const drop = document.getElementById("drop");
+    const fileName = document.getElementById("file-name");
+    const fileMeta = document.getElementById("file-meta");
+    const button = document.getElementById("go");
+    const removeBtn = document.getElementById("remove");
+    const statusBox = document.getElementById("status");
+    const steps = document.getElementById("steps");
+    const timer = document.getElementById("timer");
+    const results = document.getElementById("results");
+    const qa = document.getElementById("qa");
+    const dl = document.getElementById("dl");
+    let clock = null;
+
+    function setStatus(text, isError) {
+      statusBox.textContent = text;
+      statusBox.className = isError ? "error" : "";
+    }
+
+    function setStep(n) {
+      ["s1", "s2", "s3"].forEach((id, i) => {
+        const el = document.getElementById(id);
+        el.className = i + 1 < n ? "done" : (i + 1 === n ? "active" : "");
+      });
+    }
+
+    function startTimer() {
+      const t0 = Date.now();
+      clock = setInterval(() => {
+        const s = Math.floor((Date.now() - t0) / 1000);
+        timer.textContent = "(" + Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0") + ")";
+      }, 1000);
+    }
+
+    function stopTimer() { clearInterval(clock); timer.textContent = ""; }
+
+    function chooseFile() {
+      const file = input.files[0];
+      removeBtn.hidden = !file;
+      results.style.display = "none";
+      steps.classList.remove("on");
+      if (!file) {
+        fileName.textContent = "Choose a PDF or drop it here";
+        fileMeta.textContent = "Click to browse your files";
+        button.disabled = true;
+        setStatus("", false);
+        return;
+      }
+      fileName.textContent = file.name;
+      fileMeta.textContent = (file.size / 1048576).toFixed(2) + " MB";
+      if (file.type !== "application/pdf") {
+        button.disabled = true;
+        setStatus("Please choose a PDF file.", true);
+      } else if (file.size > MAX_MB * 1048576) {
+        button.disabled = true;
+        setStatus("File is too large. The limit is " + MAX_MB + " MB.", true);
+      } else {
+        button.disabled = false;
+        setStatus("", false);
+      }
+    }
+
+    input.addEventListener("change", chooseFile);
+    removeBtn.addEventListener("click", () => {
+      input.value = "";
+      chooseFile();
+    });
+    ["dragenter", "dragover"].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add("over"); }));
+    ["dragleave", "drop"].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove("over"); }));
+    drop.addEventListener("drop", e => {
+      if (e.dataTransfer.files.length) { input.files = e.dataTransfer.files; chooseFile(); }
+    });
+
+    function parseCSV(text) {
+      text = text.replace(/^\uFEFF/, "");
+      const rows = []; let row = [], cell = "", quoted = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        if (quoted) {
+          if (c === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else { quoted = false; } }
+          else { cell += c; }
+        } else if (c === '"') { quoted = true; }
+        else if (c === ",") { row.push(cell); cell = ""; }
+        else if (c === "\n") { row.push(cell); rows.push(row); row = []; cell = ""; }
+        else if (c !== "\r") { cell += c; }
+      }
+      if (cell || row.length) { row.push(cell); rows.push(row); }
+      return rows;
+    }
+
+    async function showResults(path) {
+      dl.href = "/" + path;
+      dl.textContent = "Download " + path.split("/").pop();
+      qa.textContent = "";
+      try {
+        const res = await fetch("/" + path + "?t=" + Date.now());
+        const rows = parseCSV(await res.text()).slice(1).filter(r => r.length > 1);
+        rows.forEach((r, i) => {
+          const d = document.createElement("details");
+          const s = document.createElement("summary");
+          s.textContent = (i + 1) + ". " + r[0];
+          const p = document.createElement("p");
+          p.textContent = r[1];
+          d.append(s, p);
+          qa.appendChild(d);
+        });
+      } catch (e) {
+        qa.textContent = "Your file is ready, but the preview could not load. Use the download button.";
+      }
+      results.style.display = "block";
+    }
+
+    button.addEventListener("click", async () => {
+      const file = input.files[0];
+      if (!file) return;
+      button.disabled = true;
+      removeBtn.disabled = true;
+      results.style.display = "none";
+      steps.classList.add("on");
+      setStatus("", false);
+
+      try {
+        setStep(1);
+        const upload = new FormData();
+        upload.append("pdf_file", file);
+        upload.append("filename", file.name);
+        const up = await fetch("/upload", { method: "POST", body: upload });
+        if (!up.ok) {
+          const err = await up.json();
+          throw new Error(err.detail || "Upload failed.");
+        }
+        const uploaded = await up.json();
+
+        setStep(2);
+        startTimer();
+        const analyze = new FormData();
+        analyze.append("pdf_filename", uploaded.pdf_filename);
+        const an = await fetch("/analyze", { method: "POST", body: analyze });
+        stopTimer();
+        if (!an.ok) throw new Error("Generation failed. Check the terminal running the server for the error.");
+        const data = await an.json();
+
+        setStep(4);
+        await showResults(data.output_file);
+        setStatus("Done. Click a question to reveal its answer.", false);
+      } catch (err) {
+        stopTimer();
+        steps.classList.remove("on");
+        setStatus(err.message, true);
+      } finally {
+        button.disabled = false;
+        removeBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

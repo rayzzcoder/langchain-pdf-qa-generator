@@ -1,0 +1,280 @@
+Q1: 1. What are the four major reasons identified in the text for the rising graduate unemployment in Pakistan, and how does each factor contribute to the problem?
+A1: **Four major reasons for the rising graduate unemployment in Pakistan (as identified in the text) and how each contributes to the problem**
+
+| # | Reason (as stated in the text) | How it contributes to graduate unemployment |
+|---|--------------------------------|---------------------------------------------|
+| 1 | **A high disparity between the education offered and the needs of the economy** | Graduates acquire skills and knowledge that do not match the types of jobs that exist or are being created in the labour market. Consequently, many of them are not qualified for the available positions, leaving them unemployed despite holding degrees. |
+| 2 | **A weak university‑industry linkage** | Because universities are not closely connected with industry, curricula, training, and research are not aligned with what employers require. This results in graduates who are “not what is being demanded by the industry,” further widening the supply‑demand gap and increasing unemployment. |
+| 3 | **An increased number of people looking for jobs (growth of the labour force)** | The rapid expansion of higher‑education enrolment and the surge in the number of universities have produced a much larger pool of graduates each year. With more job‑seekers competing for a limited number of vacancies, the unemployment rate among graduates rises. |
+| 4 | **A shrinking state of the economy and macro‑economic imbalances** | Weak macro‑economic conditions limit overall job creation and investment in sectors that could absorb graduates. When the economy is contracting or imbalanced, fewer new positions are generated, so the growing supply of graduates cannot be absorbed, leading to higher unemployment. |
+
+Together, these four factors create a mismatch between the growing supply of highly‑educated labour and the limited, poorly‑aligned demand for it, driving the sharp increase in graduate unemployment in Pakistan.
+------------------------------------------------------------
+
+Q2: 2. According to the World Bank University‑Industry Linkages Index, what is Pakistan’s rank out of 163 countries, and how does this compare with India and Sri Lanka? What does this ranking imply about Pakistan’s graduate‑unemployment situation?
+A2: - **Pakistan’s rank:** 63rd out of 163 countries on the World Bank University‑Industry Linkages Index.  
+- **Comparison:** India is ranked 26th and Sri Lanka 53rd, so both countries are positioned considerably higher (i.e., have stronger university‑industry connections) than Pakistan.
+
+**Implication:**  
+A relatively low ranking (63rd) signals weak linkage between universities and the labour market in Pakistan. This mismatch means that the skills and qualifications produced by higher‑education institutions are not well aligned with the needs of employers, which is one of the key drivers of the country’s high graduate‑unemployment rate. The fact that India and Sri Lanka rank much better underscores how stronger university‑industry connections can help reduce graduate unemployment, highlighting the seriousness of Pakistan’s situation.
+------------------------------------------------------------
+
+Q3: 3. Describe the change in the number of universities in Pakistan after the Higher Education Commission was established in 2002. How did this institutional shift affect overall enrollment in higher education relative to other education levels?
+A3: After the University Grant Commission was replaced by the Higher Education Commission (HEC) in 2002, the country experienced a sharp expansion of its university system.  Figure 1 (referenced in the brief) shows a **rapid increase in the number of universities beginning in the 2003‑04 academic year and continuing thereafter**, indicating that the institutional shift directly spurred the creation of many new higher‑education institutions.
+
+Because more universities became available, **enrollment in higher education rose much faster than enrollment at other levels of schooling**.  The authors note that the **growth rate of university enrolment “has almost doubled as compared to other levels of education”** (see Figure 2).  In other words, the HEC‑driven expansion not only added institutions but also accelerated overall higher‑education participation, outpacing the growth seen in primary, secondary or vocational enrolment.
+------------------------------------------------------------
+
+Q4: 4. Using the data provided, calculate the percentage increase in the graduate unemployment rate from the 2001‑02 survey (9.2 %) to its peak in 2014‑15 (17.9 %). What does this trend reveal about the supply‑side dynamics during that period?
+A4: **Calculation**
+
+- Graduate unemployment rate in 2001‑02 = 9.2 %  
+- Graduate unemployment rate at its peak in 2014‑15 = 17.9 %
+
+\[
+\text{Percentage increase} = \frac{17.9 - 9.2}{9.2}\times 100
+                           = \frac{8.7}{9.2}\times 100
+                           \approx 94.6\%
+\]
+
+So the graduate unemployment rate rose by **about 95 %** between the 2001‑02 survey and its 2014‑15 peak.
+
+**What the trend reveals about supply‑side dynamics**
+
+The near‑doubling of the graduate unemployment rate reflects a rapid expansion of the supply of university graduates during this period. The text notes that after the Higher Education Commission was created in 2002, “the surge in higher education… resulted in a dramatic increase in the enrollment rate in higher education by almost 200 % till 2000” and that “the growth rate of universities’ enrollment has almost doubled as compared to other levels of education.” This surge produced many more graduates than the labour market could absorb, especially given the “high disparity between the education offered and the need of the economy” and the “weak university‑industry linkage.” Consequently, the supply of graduates outpaced demand, leading to a sharp rise in graduate unemployment.
+------------------------------------------------------------
+
+Q5: 5. Summarize the key findings from the literature cited (Gassab & Jamoussi 2011; Biagi et al. 2020; Haque & Nayab 2022; Mukhtyar et al. 2021) regarding the mismatch between graduate supply and labor‑market demand, and integrate the insights from Alzua et al. (2016) and Hirshleifer et al. (2016) on the effectiveness of youth‑training and vocational‑training programmes.
+A5: **Key findings from the cited literature on the graduate‑supply / labour‑market‑demand mismatch**
+
+| Study | Main observation about the mismatch |
+|-------|--------------------------------------|
+| **Gassab & Jamoussi 2011** | Low‑skill and poor‑quality education/training are identified as drivers of graduate unemployment, implying that the qualifications that graduates receive do not match the skills demanded by employers. |
+| **Biagi et al. 2020** | A clear “mis‑alignment between demand and supply” of higher‑education graduates is the root cause of the high unemployment experienced by recent graduates. The labour market cannot absorb the volume and composition of graduates that are being produced. |
+| **Haque & Nayab 2022** | In Pakistan more than 31 % of educated youth are unemployed; women constitute about 51 % of the total unemployed pool, highlighting a gender‑biased labour market that fails to provide enough suitable jobs for the large number of graduates, especially women. |
+| **Mukhtyar et al. 2021** | Enrollment in natural‑science programmes has risen faster than the labour‑market demand for those fields. The supply‑demand gap is wider for natural‑science graduates than for social‑science or management‑science graduates, indicating a discipline‑specific oversupply. |
+
+**Integrated insights from the training‑programme literature**
+
+* **Alzúa et al. 2016** argue that youth‑training (including vocational training) is a crucial policy tool for promoting employment and overall economic growth. The implication is that, if well‑designed, training can help bridge the skills gap that underlies the supply‑demand mismatch.
+
+* **Hirshleifer et al. 2016** provide an empirical counter‑point: the average impact of vocational‑training programmes on employment and job quality is modest at best—overall effects are close to zero. However, programmes delivered by the private sector show a statistically significant and stronger positive impact, suggesting that quality, relevance, and delivery mode matter a great deal.
+
+**Combined interpretation**
+
+The literature paints a consistent picture: Pakistan (and comparable contexts) produces far more graduates—especially in natural‑science and engineering fields—than the domestic labour market can absorb, and the skills they acquire are often mismatched with employer needs. Gender bias further aggravates the problem for female graduates. While youth‑training and vocational‑training are promoted as remedies, their effectiveness depends on the relevance and quality of the programmes. Public‑sector training has limited impact, whereas private‑sector‑run training can yield measurable employment gains. Consequently, policies that (i) align university curricula with industry demand, (ii) target training programmes toward the specific skill gaps identified, and (iii) ensure high‑quality, market‑relevant delivery—particularly through the private sector—are needed to reduce the graduate‑unemployment mismatch.
+------------------------------------------------------------
+
+Q6: 6. Using Labor Force Survey data, calculate the overall graduate unemployment rate change between 2018‑19 and 2020‑21 and identify which discipline experienced the greatest relative increase. Quantify the change for engineering (from 11 % to 23.5 %) and compare it with the changes observed for computer science and agriculture graduates.
+A6: **Overall graduate unemployment rate (LFS)**  
+- 2018‑19: 14.9 %  
+- 2020‑21: 16.1 %  
+
+**Change:** 16.1 % − 14.9 % = **+1.2 percentage points**, which is an increase of about **8 %** relative to the 2018‑19 level (1.2 ÷ 14.9 ≈ 0.08).
+
+---
+
+### Discipline‑specific changes (from the same LFS table)
+
+| Discipline | 2018‑19 | 2020‑21 | Absolute increase (pp) | Relative increase |
+|------------|--------|--------|------------------------|-------------------|
+| **Engineering** | 11.2 % | 23.5 % | **+12.3 pp** | **≈ 110 %** (12.3 ÷ 11.2) |
+| Computer Science | 14.2 % | 22.6 % | +8.4 pp | ≈ 59 % (8.4 ÷ 14.2) |
+| Agriculture | 11.4 % | 29.4 % | **+18.0 pp** | **≈ 158 %** (18.0 ÷ 11.4) |
+
+**Greatest relative increase:** Agriculture graduates, whose unemployment rate rose from 11.4 % to 29.4 % – an increase of 18 percentage points, or roughly **158 %** relative to the 2018‑19 level.
+
+**Comparison:**  
+- Engineering’s unemployment more than **doubled** (≈ 110 % rise).  
+- Computer science saw a **moderate rise** of about **59 %**.  
+- Agriculture experienced the **largest jump**, outpacing engineering by a substantial margin.
+------------------------------------------------------------
+
+Q7: 7. Analyze gender disparities in graduate unemployment:
+A7: **Gender disparities in graduate unemployment (Pakistan, 2018‑19 → 2020‑21)**  
+
+| Field of study | Male unemployment % (2020‑21) | Female unemployment % (2020‑21) | Ratio (F / M) |
+|----------------|------------------------------|--------------------------------|--------------|
+| Engineering    | 22.2                         | 42.6                           | ≈ 1.9 × |
+| Medicine       | 6.1                          | 18.4                           | ≈ 3.0 × |
+| Computer       | 16.7                         | 51.5                           | ≈ 3.1 × |
+| Agriculture    | 32.1                         | 26.8                           | 0.8 × (female slightly lower) |
+| Other subjects | 8.1                          | 35.2                           | ≈ 4.3 × |
+| MPhil/PhD      | 6.9                          | 20.2                           | ≈ 2.9 × |
+| **Overall total** | **8.8**                     | **33.8**                        | **≈ 3.8 ×** |
+
+**Key observations**
+
+1. **Female graduates are far more likely to be unemployed than male graduates.**  
+   - Across all fields, the female unemployment rate in 2020‑21 averages **33.8 %**, whereas the male rate is **8.8 %** – a gap of **about 3.8 times**.  
+   - The disparity is especially stark in computer science (51.5 % vs 16.7 %) and “other subjects” (35.2 % vs 8.1 %).
+
+2. **The gap persists (and in many cases widens) over time.**  
+   - Between 2018‑19 and 2020‑21, male unemployment rose modestly (e.g., engineering from 9.43 % to 22.2 %).  
+   - Female unemployment rose dramatically in several fields (e.g., engineering from 37.25 % to 42.6 %; medicine from 14.65 % to 18.4 %).  
+   - The only field where female unemployment fell slightly is agriculture (34.07 % → 26.8 %), yet it remains high relative to the overall average.
+
+3. **Implications of the disparity.**  
+   - The authors interpret the 3.8‑fold higher female unemployment as evidence of a **gender‑biased labour market** that does not provide equal job opportunities to women, even in the 21st century.  
+   - High female unemployment, especially in high‑skill fields such as engineering and computer science, suggests that **social norms, discrimination, or mismatched expectations** may be limiting women’s entry into the formal labour market.
+
+4. **Policy relevance.**  
+   - Addressing this gender gap will require targeted interventions (e.g., gender‑sensitive internship/apprenticeship programmes, anti‑discrimination measures, and skills‑training that aligns with market demand) to ensure that women graduates can translate their qualifications into employment at rates comparable to men.
+------------------------------------------------------------
+
+Q8: a) What is the overall female versus male graduate unemployment rate in 2020‑21, and how does the “3.8 times higher” figure translate into percentages?
+A8: **Overall graduate‑unemployment rates in 2020‑21 (from Table 1)**  
+
+| Gender | Unemployment rate (2020‑21) |
+|--------|-----------------------------|
+| **Male**   | **8.8 %** |
+| **Female** | **33.8 %** |
+
+**What “3.8 times higher” means in percentage terms**
+
+- The female rate (33.8 %) divided by the male rate (8.8 %) ≈ **3.84**, i.e., females are about **3.8 times** as likely to be unemployed as males.  
+- In absolute terms this corresponds to a gap of **33.8 % − 8.8 % = 25 percentage points** between female and male graduate unemployment.
+------------------------------------------------------------
+
+Q9: b) How does the gender gap within the engineering discipline evolve from 2018‑19 to 2020‑21?
+A9: In the engineering discipline the unemployment rate for women was far higher than for men in both years, but the difference between the two genders became smaller.
+
+| Year | Male unemployment | Female unemployment | Gender gap (Female – Male) |
+|------|-------------------|---------------------|----------------------------|
+| 2018‑19 | 9.43 % | 37.25 % | **≈ 27.8 percentage points** |
+| 2020‑21 | 22.2 % | 42.6 % | **≈ 20.4 percentage points** |
+
+- Both male and female engineers saw higher unemployment in 2020‑21 than in 2018‑19.  
+- Male unemployment rose by about 12.8 pp (9.43 % → 22.2 %).  
+- Female unemployment rose by about 5.4 pp (37.25 % → 42.6 %).  
+
+Because the increase was larger for men, the gender gap narrowed from roughly **27.8 pp to 20.4 pp**. Women remain the more disadvantaged group, but the disparity between female and male engineering graduates’ unemployment rates decreased between the two survey periods.
+------------------------------------------------------------
+
+Q10: 8. Examine age‑group and regional patterns of graduate unemployment:
+A10: **Age‑group pattern**
+
+* The 21‑29‑year‑old cohort bears the brunt of graduate unemployment.  
+* According to Figure 4, this age group has the **highest unemployment rate of all graduates** and it is the highest in every discipline **except medicine**.  
+* Because 21‑29 years is the typical entry‑age for the labour market, the concentration of joblessness in this bracket signals a serious bottleneck for the country’s young, educated workforce.
+
+**Regional pattern**
+
+* **Overall (all‑worker) unemployment** is slightly higher in urban areas (7.35 %) than in rural areas (5.85 %).  
+* **Graduate‑specific unemployment**, however, shows the opposite picture:  
+  * Rural graduate unemployment = **22 %**  
+  * Urban graduate unemployment = **12 %** (Figure 5).  
+  * Thus, while the general labour market looks a bit tighter in cities, highly‑educated job‑seekers are far more likely to be unemployed in rural locations.
+
+* **Provincial differences** (Figure 6) reveal that the provinces with the greatest graduate unemployment are **Khyber Pakhtunkhwa (KPK) and Punjab**.  
+  * This suggests an excess supply of graduates relative to the capacity of local labour markets in these provinces.  
+  * Discipline‑specific nuances:  
+    * **Engineering graduates** experience especially high unemployment in **KPK**.  
+    * **Agriculture graduates** face high unemployment in **Sindh and Punjab**, despite these provinces’ agricultural base.  
+
+* An additional observation is that **agriculture graduates from rural areas are more unemployed** than their urban counterparts, indicating that even in an agrarian economy the labour market does not absorb the growing number of highly‑educated agriculturists.
+
+**In summary**
+
+* The most vulnerable age group is 21‑29 years, where unemployment peaks across almost all fields.  
+* Geographically, graduate unemployment is concentrated in **rural areas (22 %)** and in the provinces of **KPK and Punjab**, with certain disciplines (engineering in KPK; agriculture in Sindh and Punjab) showing especially acute gaps between graduate supply and local job opportunities.
+------------------------------------------------------------
+
+Q11: a) Which age group shows the highest unemployment rate and why is this particularly alarming?
+A11: The age group **21‑29 years** has the highest unemployment rate. This is especially alarming because it represents the **young labor force that is entering the job market each year**, so a large share of new graduates and young workers are unable to find jobs right when they are most needed in the economy.
+------------------------------------------------------------
+
+Q12: b) Contrast the overall urban (7.35 %) and rural (5.85 %) unemployment rates with the graduate‑specific rates (urban 12 % vs. rural 22 %). What do these differences suggest about labor‑market dynamics?
+A12: The two sets of figures tell very different stories:
+
+* **Overall labour‑market unemployment** – urban 7.35 % vs. rural 5.85 %  
+  → Rural areas show a slightly lower “general” unemployment rate than cities.
+
+* **Graduate‑specific unemployment** – urban 12 % vs. rural 22 %  
+  → Rural graduates are almost twice as likely to be unemployed as their urban counterparts.
+
+**What this contrast implies**
+
+1. **A hidden, graduate‑specific mismatch** – The lower overall rural unemployment masks a severe shortage of suitable jobs for highly‑educated workers in the countryside. While many non‑graduates find work (often in low‑skill, agricultural or informal jobs), graduates do not have comparable opportunities.
+
+2. **Urban areas provide relatively more “graduate‑friendly” jobs** – Even though cities have a higher overall unemployment rate, they still absorb a larger share of graduates, keeping graduate unemployment at 12 % rather than the 22 % seen in rural zones.
+
+3. **Sectoral and regional skill‑bias** – The evidence that even agriculture graduates are more unemployed in rural regions suggests that the rural economy is not creating skilled, value‑added positions (e.g., agribusiness, research, technology) that match graduate qualifications.
+
+4. **Structural labour‑market dynamics** – The pattern points to a dual‑labour‑market structure: a large, low‑skill rural labour pool that can be employed in traditional agriculture, and a more diversified urban market that, despite higher overall slack, can accommodate a modest share of graduates. The gap indicates that policies aimed at overall unemployment rates would overlook the specific challenges faced by educated youth in rural Pakistan.
+------------------------------------------------------------
+
+Q13: 9. Assess the impact of training on graduate employment: compare unemployment rates for graduates who received on‑the‑job training, off‑the‑job training, and no training. Discuss why off‑the‑job training appears ineffective, referencing the findings of Alzua et al. (2016) and Hirshleifer et al. (2016), and explain how deficiencies in “soft” or non‑cognitive skills may contribute.
+A13: **Impact of training on graduate employment (as reported in the paper)**  
+
+| Type of training | Unemployment rate (relative to the other groups) |
+|------------------|---------------------------------------------------|
+| **On‑the‑job training** (training received in a previous job) | **Lowest** – graduates who had on‑the‑job training show the smallest unemployment rate among the three groups. |
+| **No training** | **Intermediate** – graduates with no training have a higher unemployment rate than the on‑the‑job group but a lower rate than those who received off‑the‑job training. |
+| **Off‑the‑job training** (training received outside a job) | **Highest** – the unemployment rate for off‑the‑job trainees is higher than for both the on‑the‑job group and the “no‑training” group. |
+
+(The exact percentages are not provided in the excerpt; the authors only describe the relative ordering.)
+
+---
+
+### Why off‑the‑job training appears ineffective  
+
+1. **Limited labour‑market relevance of the skills taught**  
+   * The paper notes that “the labour market may not value the specific skills being taught” in off‑the‑job programmes. If the curricula focus on technical content that does not match employer needs, the training does not translate into better job prospects.
+
+2. **Evidence from the literature**  
+   * **Alzúa et al. (2016)** examined youth vocational‑training programmes in Argentina and found that, on average, such programmes have only a modest positive impact on employment outcomes. The impact is far smaller than participants or policymakers expect.  
+   * **Hirshleifer et al. (2016)**, studying Turkish vocational‑training experiments, reported that the overall effect on employment is “close to zero,” with a statistically significant impact only for programmes delivered by the private sector. This suggests that many publicly‑run or generic off‑the‑job courses do not improve employability.
+
+3. **Missing “soft” or non‑cognitive skills**  
+   * The authors argue that many off‑the‑job trainings lack important “soft” personal and social (non‑cognitive) skill components—such as communication, teamwork, problem‑solving, adaptability, and work‑place etiquette.  
+   * Employers increasingly value these non‑cognitive attributes; without them, graduates may possess technical knowledge but still be viewed as less employable.  
+   * The absence of these skills can also raise graduates’ reservation wages (they expect higher pay because of the training) while the labour market does not reward the newly acquired technical skills, leading to higher rates of discouraged or voluntary unemployment.
+
+4. **Possible behavioural effect**  
+   * The higher unemployment among off‑the‑job trainees compared with the “no‑training” group may reflect a selection effect: individuals who invest in off‑the‑job programmes might become more selective, waiting for jobs that match their expectations, and thus remain unemployed longer.
+
+---
+
+### Summary  
+
+- **On‑the‑job training** is associated with the **lowest graduate unemployment**, likely because it provides work‑place experience that is directly valued by employers.  
+- **Off‑the‑job training** is linked to the **highest unemployment**, reflecting limited relevance of the taught skills, a lack of soft‑skill development, and the modest or negligible impact documented by Alzúa et al. (2016) and Hirshleifer et al. (2016).  
+- Improving off‑the‑job programmes by incorporating non‑cognitive skill development and aligning curricula with employer needs—especially through private‑sector delivery—could reduce the observed inefficacy and help lower graduate unemployment.
+------------------------------------------------------------
+
+Q14: 10. Propose two evidence‑based policy recommendations to reduce graduate unemployment in Pakistan: (a) make internships/apprenticeships mandatory for all degree programs, and (b) design strategies to attract tech‑based foreign companies and encourage local businesses to develop such industries. Justify each recommendation with specific data points and literature evidence from the text.
+A14: **Policy recommendation (a): Make internships/apprenticeships mandatory for all degree programmes**  
+
+- **Why it matters:**  
+  - The paper identifies a *weak university‑industry linkage* as one of the four main drivers of graduate unemployment. Pakistan is ranked **63rd out of 163 countries** on the University‑Industry Linkages Index, well behind India (26th) and Sri Lanka (53rd).  
+  - Graduate unemployment is already **three times the overall unemployment rate** and has risen sharply for the fields that would benefit most from work‑place exposure: engineering unemployment jumped from **11.2 % (2018‑19) to 23.5 % (2020‑21)**, and computer‑science unemployment rose from **14.2 % to 22.6 %** in the same period.  
+  - Evidence from the same study shows that **graduates who receive on‑the‑job training have a lower unemployment rate**, whereas off‑the‑job training does not translate into jobs. This suggests that practical, employer‑directed experience is what the labour market values.  
+
+- **How the policy works:**  
+  - By requiring every student to complete a structured internship or apprenticeship that is **co‑designed by universities and industry**, graduates will acquire the “soft” and sector‑specific skills that are currently missing from curricula.  
+  - Mandatory placements will create a pipeline of talent that firms can evaluate early, reducing the *mismatch between supply and demand* highlighted by Biagi et al. (2020) and Gassab & Jamoussi (2011).  
+
+- **Expected impact:**  
+  - Strengthening the university‑industry interface should curb the rapid rise in unemployment for engineering and computer graduates, bring the graduate unemployment rate closer to the overall rate (currently **14.9 % → 16.1 %**), and help close the gender gap (female unemployment is **3.8 ×** male unemployment).  
+
+---
+
+**Policy recommendation (b): Design a coordinated strategy to attract tech‑based foreign companies and stimulate local tech‑industry development**  
+
+- **Why it matters:**  
+  - The same analysis notes that **graduates in engineering, computer science and agriculture face the steepest unemployment increases**, yet the country “needs to attract tech‑based foreign companies” and “facilitate local businesses to start such industries” to improve employment prospects.  
+  - The labour market currently offers **few high‑skill tech jobs**, as reflected by the sharp rise in unemployment for engineers (to **23.5 %**) and computer graduates (to **22.6 %**).  
+  - Literature on vocational training (Hirshleifer et al., 2016) finds that **private‑sector‑run programmes have a statistically significant positive impact on employment**, indicating that market‑driven, technology‑oriented firms can generate the kind of demand that public training programmes have struggled to create.  
+
+- **How the policy works:**  
+  1. **Incentivise foreign tech firms** through tax breaks, streamlined visa procedures, and dedicated “tech parks” that provide reliable power, broadband and R&D support.  
+  2. **Support local start‑ups** with seed funding, incubators, and linkages to universities (e.g., joint research projects, technology transfer offices).  
+  3. Align these incentives with the mandatory internship system so that foreign and local tech firms become the primary hosts for the required placements, ensuring that graduates acquire experience in the very sectors the policy seeks to expand.  
+
+- **Expected impact:**  
+  - Creation of **high‑skill, technology‑intensive jobs** will directly absorb the surplus of engineering and computer graduates whose unemployment has doubled in two years.  
+  - By improving the **value‑addition capacity of the agriculture sector** (currently limited to raw‑material exports) through agri‑tech investments, the strategy also addresses the high unemployment of agriculture graduates (**29.4 % in 2020‑21**).  
+  - The combined effect of foreign investment and a vibrant domestic tech ecosystem should raise Pakistan’s university‑industry linkage ranking, narrow the supply‑demand gap identified by Biagi et al. (2020), and ultimately bring graduate unemployment down toward the overall national unemployment level.
+------------------------------------------------------------
+
