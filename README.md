@@ -91,22 +91,12 @@ Get keys from [Groq Console](https://console.groq.com) and [Google AI Studio](ht
 
 The `data/` folder contains a few publicly available social sciences reports used for testing. You can also add your own PDFs there.
 
-## Project Structure
-
-```
-.
-├── requirements.txt
-├── .env.example
-└── ...
-```
-
 ## Future Work
 
 - Support for scanned PDFs (OCR)
-- Export questions and answers to PDF or CSV
 - Difficulty levels and question types (short answer, MCQ)
 
 ## Author
 
-**Raja**, BS IT, Quaid-i-Azam University
+**Raja Abdul Rafay**, BS IT, Quaid-i-Azam University
 GitHub: [@rayzzcoder](https://github.com/rayzzcoder)
