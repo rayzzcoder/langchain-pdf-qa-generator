@@ -1,10 +1,12 @@
 # LangChain PDF Q&A Generator
 
-Generate question-answer pairs from any **social sciences PDF** using LangChain, Groq, Gemini embeddings, and FAISS.
+Generate question-answer pairs from any **social sciences PDF** using LangChain, Groq, Gemini embeddings, and FAISS, through a simple FastAPI web app.
 
-Upload a PDF (a textbook chapter, research paper, or lecture notes) and get a set of questions with answers, grounded in the document's own content.
+Upload a PDF (a report, research paper, or lecture notes), and get study questions with answers grounded in the document's own content. Preview the results on the page and download them as a CSV.
 
 ## Demo
+
+**[▶ Watch the demo on Loom](https://www.loom.com/share/b9bcd0da321c48e29e2e2acdcb120348)**
 
 ### App overview
 
@@ -20,31 +22,36 @@ Upload a PDF (a textbook chapter, research paper, or lecture notes) and get a se
 
 ## Features
 
-- Reads and splits social sciences PDFs into chunks
-- Embeds chunks with Gemini embeddings and stores them in a FAISS vector store
-- Uses a Groq-hosted LLM through LangChain to generate questions and answers from the retrieved context
-- Runs locally with a simple setup
+- Web interface built with FastAPI: upload, progress steps, on-page results preview, and CSV download
+- Validates uploads on the backend (valid PDF, page count, file size)
+- Splits the PDF into chunks and generates questions with a first-pass and a refine chain
+- Retrieves relevant context with FAISS so answers stay grounded in the document
+- Built with the LangChain v1 LCEL pipeline (`retriever | prompt | llm | parser`)
+- Cleans model output (markdown symbols, numbering, special characters) before saving
 
 ## Tech Stack
 
 | Component | Tool |
 |---|---|
-| Framework | LangChain |
+| Framework | LangChain v1 (LCEL) |
 | LLM | Groq |
 | Embeddings | Google Gemini |
 | Vector store | FAISS |
+| Web app | FastAPI |
 | Language | Python 3.10 |
 
 ## How It Works
 
 ```
-PDF  ->  Text chunks  ->  Gemini embeddings  ->  FAISS index  ->  Retrieved context  ->  Groq LLM  ->  Questions & answers
+PDF -> Text chunks -> Questions (first pass + refine) -> Gemini embeddings -> FAISS index
+    -> Retrieved context -> Groq LLM -> Answers -> CSV
 ```
 
-1. The PDF is loaded and split into overlapping chunks.
-2. Each chunk is converted into an embedding and stored in FAISS.
-3. Relevant context is retrieved and passed to the LLM.
-4. The LLM generates questions and answers based on that context.
+1. The PDF is loaded and split into chunks.
+2. Questions are generated from the document text.
+3. Chunks are embedded with Gemini and stored in FAISS.
+4. For each question, relevant context is retrieved and passed to the LLM.
+5. The answers are cleaned and written to a CSV file.
 
 ## How to Run
 
@@ -77,24 +84,36 @@ GROQ_API_KEY=your_groq_api_key
 GOOGLE_API_KEY=your_gemini_api_key
 ```
 
-Get keys from [Groq Console](https://console.groq.com) and [Google AI Studio](https://aistudio.google.com).
+Get keys from the [Groq Console](https://console.groq.com) and [Google AI Studio](https://aistudio.google.com).
 
-### 5. Run the project
+### 5. Start the app
+
+With the environment activated and inside the project folder, run:
 
 ```bash
-# Replace with your actual command, e.g.:
-# python app.py
-# jupyter notebook
+python app.py
 ```
+
+Then open the local address shown in the terminal (usually **http://127.0.0.1:8000**) in your browser.
+
+## Using the App
+
+1. Open the page and upload a text-based PDF.
+2. Wait while the progress steps run (this can take a few minutes for longer documents).
+3. Preview the generated questions and answers on the page.
+4. Download the CSV, or remove the file and try another one.
+
+The page shows the current limits for page count and file size.
 
 ## Sample Data
 
-The `data/` folder contains a few publicly available social sciences reports used for testing. You can also add your own PDFs there.
+The `data/` folder contains a few publicly available social sciences reports used for testing. You can also use your own PDFs.
 
-## Future Work
+## Limitations and Future Work
 
-- Support for scanned PDFs (OCR)
-- Difficulty levels and question types (short answer, MCQ)
+- Only text-based PDFs are supported. Scanned or handwritten documents need OCR.
+- The Groq free tier has a tokens-per-minute limit, so long documents run slowly.
+- Planned: unique file names per upload, a background job queue for multiple users, and an OCR/ICR version for scanned documents.
 
 ## Author
 
